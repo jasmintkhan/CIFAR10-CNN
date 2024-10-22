@@ -4,7 +4,7 @@
 
 function outarray = apply_fullconnect(inarray, filterbank, biasvals)
     [N, M, D1] = size(inarray);
-    D2 = size(filterbank, 3);
+    D2 = size(filterbank, 4);
     outarray = zeros(1, 1, D2);
     
     for l = 1:D2
