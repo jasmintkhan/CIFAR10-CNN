@@ -14,6 +14,7 @@ predicted_classes = zeros(1, size(imageset, 4));
 
 % Confusion matrix (10x10), initially filled with zeros
 confusion_matrix = zeros(10, 10);
+top_k_count = zeros(1, 10);  % Initialize top-k count array
 
 % Iterate through all the test images
 for i = 1:size(imageset, 4)
